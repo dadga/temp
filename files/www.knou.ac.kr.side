@@ -1,0 +1,272 @@
+{
+  "id": "f85d4e04-7786-49be-ace3-f34849157e57",
+  "version": "2.0",
+  "name": "www.knou.ac.kr",
+  "url": "https://www.knou.ac.kr",
+  "tests": [{
+    "id": "9517b921-a29a-440c-b8fc-0522eb9332e2",
+    "name": "www.knou.ac.kr",
+    "commands": [{
+      "id": "a0b8c381-57ed-458d-b4bb-e57e130df380",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b24c200-0e60-495e-b2b8-7dbea5bda94a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b42249d-d14d-4567-9b21-c5a751d88c49",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d37e97e-a4e1-43f2-9706-1d51cd6e68ac",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a693f2a-7de8-4627-969f-34b9f589263d",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c064e0e-5af7-43ed-b516-bf7d67018c20",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "8e7e87f5-3c19-48e9-8395-0f1f4f612d1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0412f681-030a-485a-af9e-f619f9889a01",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e4d96d0e-2140-44ac-a5e4-7473827256ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["name=btn_login", "name"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//input[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c5e2566-a34f-4b8c-87e9-1e0c6bc6f728",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ce635c4-76cb-4162-ac1e-bcaca4705cb6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "13770f60-de46-4bb5-b9f7-5f94a43e6865",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "5c408b7f-a98b-4f55-9f1c-821d657f3593",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/fieldset/span/input[2]", "xpath:idRelative"],
+        ["xpath=//span/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4c6b69f4-d0e4-46b3-8702-cb792778af03",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//input[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/fieldset/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2712f512-df0e-49a4-80e8-41d965d59b71",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1 img",
+      "targets": [
+        ["css=h1 img", "css:finder"],
+        ["xpath=//img[@alt='국립 한국방송통신대학교 Korea National Open University']", "xpath:img"],
+        ["xpath=//form[@id='LoginForm']/h1/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8778f513-d401-48ad-a69b-7cc8828ef545",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d24ef48b-be2e-4146-b929-767526f8a62a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gnb li:nth-child(1) img",
+      "targets": [
+        ["css=#gnb li:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div[@id='gnb']/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a9f8060-cfac-410a-b387-0bba7bc875f2",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "d95ab69c-e466-4570-8cdf-a6739217217f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "12ff26e2-a544-437b-9f37-4a14183d722f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/fieldset/span/input[2]", "xpath:idRelative"],
+        ["xpath=//span/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f5fdf44b-0fe7-47ec-9c31-d284420e885b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//input[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/fieldset/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65adaeb7-fd6e-48e6-ace7-4facee83e991",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51719646-a09e-4e18-a4fb-18ca1d0973c5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9517b921-a29a-440c-b8fc-0522eb9332e2"]
+  }],
+  "urls": ["https://www.knou.ac.kr/"],
+  "plugins": []
+}
