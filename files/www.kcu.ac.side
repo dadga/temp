@@ -1,0 +1,126 @@
+{
+  "id": "43755fe8-c30c-44d4-8775-6ad29e9c829d",
+  "version": "2.0",
+  "name": "www.kcu.ac",
+  "url": "http://www.kcu.ac",
+  "tests": [{
+    "id": "a0189fc9-0e2f-47f2-a4a4-fdf77939c097",
+    "name": "www.kcu.ac",
+    "commands": [{
+      "id": "d68c30eb-8961-4341-bfdc-10b7d39b9e9b",
+      "comment": "",
+      "command": "open",
+      "target": "/portal/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d72efa68-8158-4ade-8b4e-f983b7db3907",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "169c33c7-857f-4768-a6e0-8092e9b3d756",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.lg > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[2]", "xpath:link"],
+        ["xpath=//div[@id='headTop']/div[2]/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71dc02e7-c8e6-41cd-b43d-62073757f3ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=UserID",
+      "targets": [
+        ["id=UserID", "id"],
+        ["name=UserID", "name"],
+        ["css=#UserID", "css:finder"],
+        ["xpath=//input[@id='UserID']", "xpath:attributes"],
+        ["xpath=//div[@id='headTop']/div[2]/div/div/ul/li[2]/div/div[2]/div/form/div/p/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5a27d0b-9e5c-4420-a801-d80920e309c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserID",
+      "targets": [
+        ["id=UserID", "id"],
+        ["name=UserID", "name"],
+        ["css=#UserID", "css:finder"],
+        ["xpath=//input[@id='UserID']", "xpath:attributes"],
+        ["xpath=//div[@id='headTop']/div[2]/div/div/ul/li[2]/div/div[2]/div/form/div/p/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e2aa86ce-b65a-4e0b-bb89-59fee6c50242",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='headTop']/div[2]/div/div/ul/li[2]/div/div[2]/div/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//p[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a999079f-bb5b-426e-ba82-f3b2be16f9ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='headTop']/div[2]/div/div/ul/li[2]/div/div[2]/div/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//p[2]/span/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "27366797-d6aa-477e-bb19-ccb118d917ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-btn",
+      "targets": [
+        ["css=.login-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[4]", "xpath:link"],
+        ["xpath=//a[@onclick='javascript:loginF();']", "xpath:attributes"],
+        ["xpath=//div[@id='headTop']/div[2]/div/div/ul/li[2]/div/div[2]/div/form/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "529db4eb-3df1-48e0-a0b8-c2ca29fbfcd3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "febf6b0d-c881-4f5a-9813-e58cd8a79722",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a0189fc9-0e2f-47f2-a4a4-fdf77939c097"]
+  }],
+  "urls": ["http://www.kcu.ac/"],
+  "plugins": []
+}

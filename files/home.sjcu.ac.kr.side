@@ -1,0 +1,132 @@
+{
+  "id": "f57602ea-c7c9-41ad-8d60-da586249861a",
+  "version": "2.0",
+  "name": "home.sjcu.ac.kr",
+  "url": "https://home.sjcu.ac.kr",
+  "tests": [{
+    "id": "147cbbb0-9658-449f-89ba-a11926ee00ef",
+    "name": "home.sjcu.ac.kr",
+    "commands": [{
+      "id": "48c0574d-9179-4856-bd92-c1be89d2d562",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30c5a6e9-335f-4517-acf4-00669c2e3d72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7832237d-5f32-4f1b-8c36-32eaae3c7dfc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=한달음등굣길(로그인)",
+      "targets": [
+        ["linkText=한달음등굣길(로그인)", "linkText"],
+        ["css=.mUtil_topLog > .btn_topPower", "css:finder"],
+        ["xpath=//a[contains(text(),'한달음등굣길(로그인)')]", "xpath:link"],
+        ["xpath=//div[@id='header']/header/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.sjcu.ac.kr/security/login?st=U')]", "xpath:href"],
+        ["xpath=//header/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'한달음등굣길(로그인)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ff0b71-7e1b-4083-a117-f18f01988141",
+      "comment": "",
+      "command": "click",
+      "target": "id=uid1",
+      "targets": [
+        ["id=uid1", "id"],
+        ["name=uid1", "name"],
+        ["css=#uid1", "css:finder"],
+        ["xpath=//input[@id='uid1']", "xpath:attributes"],
+        ["xpath=//div[@id='login01']/ul/li[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fe3b357-940e-4a26-b170-22999a2e5532",
+      "comment": "",
+      "command": "type",
+      "target": "id=uid1",
+      "targets": [
+        ["id=uid1", "id"],
+        ["name=uid1", "name"],
+        ["css=#uid1", "css:finder"],
+        ["xpath=//input[@id='uid1']", "xpath:attributes"],
+        ["xpath=//div[@id='login01']/ul/li[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "35df3fc9-3d14-4356-ae56-4c0773395d32",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd1",
+      "targets": [
+        ["id=pwd1", "id"],
+        ["name=pwd1", "name"],
+        ["css=#pwd1", "css:finder"],
+        ["xpath=//input[@id='pwd1']", "xpath:attributes"],
+        ["xpath=//div[@id='login01']/ul/li[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "638c34ca-ef5f-41e2-8f8e-d9e27343df59",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd1",
+      "targets": [
+        ["id=pwd1", "id"],
+        ["name=pwd1", "name"],
+        ["css=#pwd1", "css:finder"],
+        ["xpath=//input[@id='pwd1']", "xpath:attributes"],
+        ["xpath=//div[@id='login01']/ul/li[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "58fc9483-ca2c-4eac-8945-b04b4dfc9057",
+      "comment": "",
+      "command": "click",
+      "target": "css=#login01 li:nth-child(2) .btnC_b2",
+      "targets": [
+        ["css=#login01 li:nth-child(2) .btnC_b2", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='login01']/ul/li[2]/div/button", "xpath:idRelative"],
+        ["xpath=//li[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9edff93f-2640-41c9-9c3c-85c83451ac68",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "a7fa219c-cb73-4649-a5c6-f2beb5ed7926",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e9b9950-ac95-464a-b80f-7344ee35a511",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["147cbbb0-9658-449f-89ba-a11926ee00ef"]
+  }],
+  "urls": ["https://home.sjcu.ac.kr/"],
+  "plugins": []
+}

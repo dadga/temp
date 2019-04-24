@@ -1,0 +1,136 @@
+{
+  "id": "df634a5e-c529-4695-bfe7-bc3337b204e3",
+  "version": "2.0",
+  "name": "www.sejong.ac.kr",
+  "url": "http://www.sejong.ac.kr",
+  "tests": [{
+    "id": "9ee59ad1-c5fe-4ef7-98a8-093ba2489526",
+    "name": "www.sejong.ac.kr",
+    "commands": [{
+      "id": "b8d3860b-3ee0-462a-a3c7-8df761e5ce9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55ae461e-1857-4b29-bd82-a31b88e8c7a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28d33e20-3f23-40ee-be24-1ddc01c7cc60",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=학사정보시스템",
+      "targets": [
+        ["linkText=학사정보시스템", "linkText"],
+        ["css=.has_child:nth-child(2) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'학사정보시스템')]", "xpath:link"],
+        ["xpath=//ul[@id='langLink']/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://uis.sejong.ac.kr']", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'학사정보시스템')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win761",
+      "windowTimeout": 2000
+    }, {
+      "id": "8f88f98d-b1f6-4e1c-8ca9-507a3c56a6df",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9f2d96c-6131-43ea-84c8-79f9f2be385f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win761}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a808918-2c1b-4388-806d-89ea3360f018",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/form/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "214e7008-193f-4df6-a227-db5141a82035",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/form/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43e71a3b-99fe-445b-bf08-7d27faf1048e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/form/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "805024e2-5ad6-467e-949e-960bdc04f205",
+      "comment": "",
+      "command": "click",
+      "target": "id=logbtn",
+      "targets": [
+        ["id=logbtn", "id"],
+        ["css=#logbtn", "css:finder"],
+        ["xpath=//input[@id='logbtn']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de0bb36-474a-4c7e-ab45-894f383f8790",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f55bc3df-0f30-45d3-a5c6-5dbfeb1ad60a",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9157d90e-8764-45f7-b98b-b83966fbc6d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ee59ad1-c5fe-4ef7-98a8-093ba2489526"]
+  }],
+  "urls": ["http://www.sejong.ac.kr/"],
+  "plugins": []
+}

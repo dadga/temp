@@ -1,0 +1,139 @@
+{
+  "id": "d7777232-1e88-42c2-ac63-bdb6e732dd71",
+  "version": "2.0",
+  "name": "www.kma.ac.kr",
+  "url": "http://lib.kma.ac.kr",
+  "tests": [{
+    "id": "d6508951-4027-4bcd-a98a-157c95df1aa9",
+    "name": "www.kma.ac.kr",
+    "commands": [{
+      "id": "19ffa797-207e-4d8e-bbf6-d6d300a6aba5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e42e767a-a96d-4e1f-b7ae-cf8546a8b450",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acee03db-e5ab-4a32-ae8c-c33246d0a9b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.log > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "972699af-817e-4b96-9462-e0adaca94cf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3ec86da0-fe48-4196-8fff-9b433a83c666",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d2c868-8637-48fa-a744-1076e2a0f77e",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "739a4e99-dc16-4d38-8138-abf8ce61d589",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ca8d7e0-3084-4ecf-8cfe-394bdb97f793",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e32fad85-3795-4aa7-a13c-14a4466936d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnLogin",
+      "targets": [
+        ["css=.btnLogin", "css:finder"],
+        ["xpath=//input[@value='LOGIN']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c264029-dc41-42c6-8e4e-dd5dccba6742",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fbc0cddf-417f-4ec1-a399-dfe49bcfbe77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d6508951-4027-4bcd-a98a-157c95df1aa9"]
+  }],
+  "urls": ["http://lib.kma.ac.kr/"],
+  "plugins": []
+}

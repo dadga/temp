@@ -1,0 +1,110 @@
+{
+  "id": "067c5def-41e8-4959-9cb7-408eff124929",
+  "version": "2.0",
+  "name": "sookmyung.ac.kr",
+  "url": "https://admission.sookmyung.ac.kr",
+  "tests": [{
+    "id": "bc6da983-eb53-4f2d-93a7-15ee691d2030",
+    "name": "Untitled",
+    "commands": [{
+      "id": "31fbcd29-e381-4624-b5be-fe3b092dc807",
+      "comment": "",
+      "command": "open",
+      "target": "/enter/html/member/login.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08ee6e06-c7ef-413d-ad02-ec921ded62e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bac55a3-0454-40d3-9188-1ad53f5fb61f",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/table/tbody/tr/td/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a85b54ef-1635-4c43-ba39-1e45a62a591f",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/table/tbody/tr/td/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "1ea054bb-6585-4aa5-b74f-cf425d0c1009",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/table/tbody/tr[2]/td/span/span/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c602eb83-9435-4c28-bbb5-001fc399922a",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/table/tbody/tr[2]/td/span/span/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/span/span/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "46a7761f-d42d-42a1-b226-a098a4c4b9c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td > input",
+      "targets": [
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3056fdbf-365a-4d47-8112-bede93a06afc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "74048911-a007-432f-a272-b06628b60b8e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bc6da983-eb53-4f2d-93a7-15ee691d2030"]
+  }],
+  "urls": ["https://admission.sookmyung.ac.kr/"],
+  "plugins": []
+}

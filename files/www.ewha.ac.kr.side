@@ -1,0 +1,148 @@
+{
+  "id": "8d1d485e-8c19-4036-8262-9f47e1bea95a",
+  "version": "2.0",
+  "name": "www.ewha.ac.kr",
+  "url": "http://www.ewha.ac.kr",
+  "tests": [{
+    "id": "f1a9eed6-5cfa-4a34-94ef-f420c2d2cfce",
+    "name": "www.ewha.ac.kr",
+    "commands": [{
+      "id": "379051e1-e3b8-445c-8e67-c4ec68ac00bc",
+      "comment": "",
+      "command": "open",
+      "target": "/mbs/ewhakr/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d6aa46f-af46-41df-b24c-80a0df1db668",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "833e723c-3538-4028-ab40-3e7654bf9505",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#visual01 img",
+      "targets": [
+        ["css=#visual01 img", "css:finder"],
+        ["xpath=//img[@alt='관리처, 2018 우수안전연구실 시상식 개최']", "xpath:img"],
+        ["xpath=//li[@id='visual01']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b26bbcae-ce01-497f-a159-b3e473b24b30",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=#lnb > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"javascript:ssoLogin('/swift/sso/requestLogin.jsp?retURL=/mbs/ewhakr/index.jsp&entity_id=sso.ewha.ac.kr');\"]", "xpath:attributes"],
+        ["xpath=//ul[@id='lnb']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "412d2ba0-f0c6-4d69-b3d1-5cc654dcd297",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["name=login_id", "name"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//div[@id='loginwrap']/div[2]/div/div/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "915eedb6-ec52-462a-b679-44b07cb51076",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["name=login_id", "name"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//div[@id='loginwrap']/div[2]/div/div/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "24bec042-adbf-412e-ad30-b0841954df85",
+      "comment": "",
+      "command": "click",
+      "target": "id=usr_pwd",
+      "targets": [
+        ["id=usr_pwd", "id"],
+        ["name=usr_pwd", "name"],
+        ["css=#usr_pwd", "css:finder"],
+        ["xpath=//input[@id='usr_pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='loginwrap']/div[2]/div/div/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e3dc363-8198-4c81-a29d-2e9feaf2134a",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_pwd",
+      "targets": [
+        ["id=usr_pwd", "id"],
+        ["name=usr_pwd", "name"],
+        ["css=#usr_pwd", "css:finder"],
+        ["xpath=//input[@id='usr_pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='loginwrap']/div[2]/div/div/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "0e3fc3ea-7cee-4801-a21e-abdb6c25cf0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > img",
+      "targets": [
+        ["css=a:nth-child(2) > img", "css:finder"],
+        ["xpath=//div[@id='loginwrap']/div[2]/div/div/form/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "529b161f-d10c-4fcf-8e48-caa5ba03280f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='loginwrap']/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "158b5c30-a463-4731-b9de-370067d658d3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2af5aadd-dc40-4c79-a3ac-88ca2cdbbbe5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f1a9eed6-5cfa-4a34-94ef-f420c2d2cfce"]
+  }],
+  "urls": ["http://www.ewha.ac.kr/"],
+  "plugins": []
+}

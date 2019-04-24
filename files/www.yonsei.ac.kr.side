@@ -1,0 +1,112 @@
+{
+  "id": "f54902da-ebf7-4730-9183-cf231a8845b1",
+  "version": "2.0",
+  "name": "www.yonsei.ac.kr",
+  "url": "https://www.yonsei.ac.kr",
+  "tests": [{
+    "id": "be325dec-cb10-4dfe-adee-8b3f45a370c7",
+    "name": "Untitled",
+    "commands": [{
+      "id": "c7aa1ee3-c658-4e47-a147-1a835b9a9046",
+      "comment": "",
+      "command": "open",
+      "target": "/sc/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4c5b461-36ba-4fe3-b0b6-23b2a1de9348",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd82db76-5bb4-4067-89b0-68ad8bca6737",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//div[@id='utilmenu']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sc/login.jsp')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e376fbe7-5d9f-42c3-bbf8-ac34b79183f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=loginId", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a306cf1c-243b-470a-955c-50eac4388fe5",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginPasswd",
+      "targets": [
+        ["id=loginPasswd", "id"],
+        ["name=loginPasswd", "name"],
+        ["css=#loginPasswd", "css:finder"],
+        ["xpath=//input[@id='loginPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2284a973-69be-47c3-8a02-e6b26372be81",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPasswd",
+      "targets": [
+        ["id=loginPasswd", "id"],
+        ["name=loginPasswd", "name"],
+        ["css=#loginPasswd", "css:finder"],
+        ["xpath=//input[@id='loginPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4130aef6-7eb0-4afc-9b2b-d3bc51cd3e45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인(Login)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36b65071-49c2-48db-b959-bee08d2a7159",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bc140e62-0e4d-4651-bc12-c053ec32e18b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be325dec-cb10-4dfe-adee-8b3f45a370c7"]
+  }],
+  "urls": ["https://www.yonsei.ac.kr/"],
+  "plugins": []
+}
