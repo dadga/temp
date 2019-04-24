@@ -1,0 +1,228 @@
+{
+  "id": "46e40c66-24ff-4831-847e-c28401320e11",
+  "version": "2.0",
+  "name": "smu",
+  "url": "https://www.smu.ac.kr",
+  "tests": [{
+    "id": "61dec2a1-09a4-4ff2-b97d-43c9883758b8",
+    "name": "Untitled",
+    "commands": [{
+      "id": "d175f08a-7d7c-4a4d-90d8-0bef964e3986",
+      "comment": "",
+      "command": "open",
+      "target": "/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22949757-27cd-46ab-8279-355556b1a8ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1255x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d1b310b-1970-49ec-9dcb-36757763623a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.login:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:loginPopupOpen();')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6255",
+      "windowTimeout": 2000
+    }, {
+      "id": "82b5863a-f127-43ad-8bf2-da44fbd69413",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc817cab-3d7f-4164-8b03-03665bb1b5e3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6255}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7eb04186-033e-481f-87ee-4c465230ef02",
+      "comment": "",
+      "command": "click",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=.INPUT_TXT", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb980d6-a64d-4864-9e80-195cda2f25d2",
+      "comment": "",
+      "command": "type",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=.INPUT_TXT", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a2128274-8a9f-46a7-a0f7-5c9c8a982bd3",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=.input_pw", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "130ff764-9c2b-4c38-af5e-525455933826",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt_login2",
+      "targets": [
+        ["css=.bt_login2", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8506be-5846-4dae-995b-b022e419bd5b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6244f73b-347a-4b29-b3bb-b3122b410b9b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8936ed93-c81e-4716-9662-6329a92c0206",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=교직원",
+      "targets": [
+        ["linkText=교직원", "linkText"],
+        ["css=.util-box-first > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'교직원')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ko/service/staff.do')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'교직원')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17fa8c0a-692b-4ca3-97a0-4af1ddac7d2b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=교직원",
+      "targets": [
+        ["linkText=교직원", "linkText"],
+        ["css=.util-box-first > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'교직원')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ko/service/staff.do')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'교직원')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "078969b2-64ea-4547-9d27-8cd0a0907dc9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sitemap",
+      "targets": [
+        ["linkText=Sitemap", "linkText"],
+        ["css=.btn-sitemap-new", "css:finder"],
+        ["xpath=//a[contains(text(),'Sitemap')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div/div/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#n')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sitemap')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8729bc78-b604-4636-a985-62b3a988ad20",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.sitemap-new-close > img",
+      "targets": [
+        ["css=.sitemap-new-close > img", "css:finder"],
+        ["xpath=//img[@alt='닫기']", "xpath:img"],
+        ["xpath=//body[@id='item_body']/header/div/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": "18,1"
+    }, {
+      "id": "cb55b1c0-33e1-4b70-aa3b-825013a77342",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.sitemap-new-close > img",
+      "targets": [
+        ["css=.sitemap-new-close > img", "css:finder"],
+        ["xpath=//img[@alt='닫기']", "xpath:img"],
+        ["xpath=//body[@id='item_body']/header/div/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": "18,1"
+    }, {
+      "id": "46f18bd9-3f00-492e-964a-3d54be89698c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.sitemap-new-close > img",
+      "targets": [
+        ["css=.sitemap-new-close > img", "css:finder"],
+        ["xpath=//img[@alt='닫기']", "xpath:img"],
+        ["xpath=//body[@id='item_body']/header/div/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": "18,1"
+    }, {
+      "id": "5abf29da-8385-44a8-9de1-24fc9492d3bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitemap-new-close > img",
+      "targets": [
+        ["css=.sitemap-new-close > img", "css:finder"],
+        ["xpath=//img[@alt='닫기']", "xpath:img"],
+        ["xpath=//body[@id='item_body']/header/div/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "495fd257-2631-4053-afb5-54e71f47cc45",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cee04938-e3b8-4a6d-9e3d-0552b6ffa356",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["61dec2a1-09a4-4ff2-b97d-43c9883758b8"]
+  }],
+  "urls": ["https://www.smu.ac.kr/"],
+  "plugins": []
+}

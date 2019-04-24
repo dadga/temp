@@ -1,0 +1,118 @@
+{
+  "id": "828944f5-489a-496d-896d-47ff19710b12",
+  "version": "2.0",
+  "name": "cufs",
+  "url": "http://www.cufs.ac.kr",
+  "tests": [{
+    "id": "d73d5cee-9ce6-4a1b-8ab5-113767927de2",
+    "name": "Untitled",
+    "commands": [{
+      "id": "734764fa-6841-40b1-b5fe-8e3d45931577",
+      "comment": "",
+      "command": "open",
+      "target": "/index_bottom.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56164e47-9545-4949-917f-b6e1a286813f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1255x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ba01e81-5504-45c5-9cd5-128daec930d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=li:nth-child(2) > .util", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/com/s_com_commlgin.jsp')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c4dc0b1-81b1-4999-aa57-4d171d4b0ae8",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc9c82b9-1eea-4846-b42e-aa90ecd888cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "5f593a17-4914-48cc-8971-2ca828618af5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d853f207-aaf5-48c7-bc57-d5090c1275b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit:nth-child(8)",
+      "targets": [
+        ["css=.submit:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2513be61-55f4-4fab-a723-ed826bce061f",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "☞ 학번 또는 비밀번호를 다시 확인 바랍니다.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "032a978e-2c99-43dd-9be7-777bd5b0bd6a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9a79b47c-5632-48e1-9578-2fc9cb1ccbe9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d73d5cee-9ce6-4a1b-8ab5-113767927de2"]
+  }],
+  "urls": ["http://www.cufs.ac.kr/"],
+  "plugins": []
+}

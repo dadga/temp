@@ -1,0 +1,185 @@
+{
+  "id": "86d0c733-9fad-4a90-9e30-91102f28ce2f",
+  "version": "2.0",
+  "name": "mju",
+  "url": "http://www.mju.ac.kr",
+  "tests": [{
+    "id": "86bfdb83-4be0-421c-a16c-3627dfcebbad",
+    "name": "Untitled",
+    "commands": [{
+      "id": "e2d8c482-145a-47b8-94e3-bec50d67ce36",
+      "comment": "",
+      "command": "open",
+      "target": "/mbs/mjukr/index.jsp?SWIFT_SESSION_CHK=false",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bf52d8e-0d0c-4acf-b195-c8d38f30030d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82c615fe-6bff-4d81-a48b-17a975f039a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.txt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='totwrap']/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.mju.ac.kr/swift/login/login_home.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53f33546-fe87-48f8-a6d8-6c980dcdeb3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=userID",
+      "targets": [
+        ["id=userID", "id"],
+        ["name=userID", "name"],
+        ["css=#userID", "css:finder"],
+        ["xpath=//input[@id='userID']", "xpath:attributes"],
+        ["xpath=//div[@id='per']/div/div/div[2]/div[3]/div/div/div[2]/div/form/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "fe4f1d08-e87e-42e1-a7bf-c64faebed6dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPW",
+      "targets": [
+        ["id=userPW", "id"],
+        ["name=userPW", "name"],
+        ["css=#userPW", "css:finder"],
+        ["xpath=//input[@id='userPW']", "xpath:attributes"],
+        ["xpath=//div[@id='per']/div/div/div[2]/div[3]/div/div/div[2]/div/form/div/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6565c3fd-9bd7-45ea-a71f-8efe952c3da3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > input",
+      "targets": [
+        ["css=.btn > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='per']/div/div/div[2]/div[3]/div/div/div[2]/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4af770b-e532-4eb7-9b46-715756148f3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lbn2:nth-child(6) li:nth-child(1) img",
+      "targets": [
+        ["css=.lbn2:nth-child(6) li:nth-child(1) img", "css:finder"],
+        ["xpath=(//img[@alt='도서관'])[2]", "xpath:img"],
+        ["xpath=//div[@id='container1']/div/div/div[5]/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/ul/li/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2874",
+      "windowTimeout": 2000
+    }, {
+      "id": "7b822831-47c7-4e18-acfd-198c8a161467",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ecfc570-1556-47d2-8762-eb482b400f36",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2874}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16f90873-4706-4a53-849d-f222f286fbb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tm > li:nth-child(5) img",
+      "targets": [
+        ["css=#tm > li:nth-child(5) img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//ul[@id='tm']/li[5]/a/img", "xpath:idRelative"],
+        ["xpath=//li[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3967775b-49de-4d1e-b2d7-bf9132f4c97e",
+      "comment": "",
+      "command": "type",
+      "target": "id=userID",
+      "targets": [
+        ["id=userID", "id"],
+        ["name=userID", "name"],
+        ["css=#userID", "css:finder"],
+        ["xpath=//input[@id='userID']", "xpath:attributes"],
+        ["xpath=//div[@id='lib']/div/div/div[2]/div[3]/div/div/div[2]/div/form/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "dc76a744-ad3a-4355-9a5d-8c2cbdc2e6ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPW",
+      "targets": [
+        ["id=userPW", "id"],
+        ["name=userPW", "name"],
+        ["css=#userPW", "css:finder"],
+        ["xpath=//input[@id='userPW']", "xpath:attributes"],
+        ["xpath=//div[@id='lib']/div/div/div[2]/div[3]/div/div/div[2]/div/form/div/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "df56cb43-7236-4605-a90b-8e0d9392849e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > input",
+      "targets": [
+        ["css=.btn > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='lib']/div/div/div[2]/div[3]/div/div/div[2]/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d7b1d29-24f0-4556-b8a5-4aea35586b85",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41d0a746-b1db-4ae8-9035-d478f7b6388a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8165c5c3-3a60-49c2-a809-8f779c97494e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["86bfdb83-4be0-421c-a16c-3627dfcebbad"]
+  }],
+  "urls": ["http://www.mju.ac.kr/"],
+  "plugins": []
+}

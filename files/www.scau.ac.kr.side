@@ -1,0 +1,153 @@
+{
+  "id": "7d7120f3-35ae-48b5-aa6e-589203509bbb",
+  "version": "2.0",
+  "name": "scau",
+  "url": "https://www.scau.ac.kr",
+  "tests": [{
+    "id": "e6a2b34b-25d1-41cb-89eb-8762f0e03700",
+    "name": "Untitled",
+    "commands": [{
+      "id": "d102081d-90df-425d-aa15-a11dbb127a8c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1433a1e7-3ce3-4b9d-99bf-f686c5b92c87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abc5efe2-188b-41c4-bab2-ede13e2bd66e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://learn.scau.ac.kr/Account/Login')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00993653-4500-48b6-9caf-6387fcd9bd4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=logId_1",
+      "targets": [
+        ["id=logId_1", "id"],
+        ["name=userid_normal", "name"],
+        ["css=#logId_1", "css:finder"],
+        ["xpath=//input[@id='logId_1']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d510a892-bd49-4cd3-a3eb-a28a17369d95",
+      "comment": "",
+      "command": "type",
+      "target": "id=logId_1",
+      "targets": [
+        ["id=logId_1", "id"],
+        ["name=userid_normal", "name"],
+        ["css=#logId_1", "css:finder"],
+        ["xpath=//input[@id='logId_1']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "d3735372-735f-4fae-95c5-11fa50484fd1",
+      "comment": "",
+      "command": "type",
+      "target": "id=logPw_1",
+      "targets": [
+        ["id=logPw_1", "id"],
+        ["name=password_normal", "name"],
+        ["css=#logPw_1", "css:finder"],
+        ["xpath=//input[@id='logPw_1']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "fc994709-1782-41b4-9058-8e9346cfa264",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_Login",
+      "targets": [
+        ["id=btn_Login", "id"],
+        ["css=#btn_Login", "css:finder"],
+        ["xpath=//input[@id='btn_Login']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0495e4e-d545-4924-8833-be8290b0bfef",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "489aa3a2-c9f8-46cb-932e-0bdfd78da11e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2340}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cb9d12d-0db0-4db1-a25b-1cdef6f392f3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7cd851e-1399-4186-8324-562fc218f377",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "안내 팝업이 차단되었습니다.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9621beb6-8bdc-43e7-88e3-fc46a415eada",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2340}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5359ac87-a81d-4479-8196-d82ba5c0fb8f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70f65233-c9aa-4a41-8a3e-83bd26b5962c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d0550bc4-70a1-49d4-a68a-add77d464030",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e6a2b34b-25d1-41cb-89eb-8762f0e03700"]
+  }],
+  "urls": ["https://www.scau.ac.kr/"],
+  "plugins": []
+}
