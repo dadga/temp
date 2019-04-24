@@ -1,0 +1,299 @@
+{
+  "id": "cee8f072-4c01-4365-a46d-9476b9c039de",
+  "version": "2.0",
+  "name": "www.cau.ac.kr",
+  "url": "https://www.cau.ac.kr",
+  "tests": [{
+    "id": "d1b2076c-4666-4455-9257-b214d9e4bd0e",
+    "name": "www.cau.ac.kr",
+    "commands": [{
+      "id": "b0738851-bb60-4e89-ad54-7e708910cbb6",
+      "comment": "",
+      "command": "open",
+      "target": "/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4b09df8-5f61-45e5-a169-31de97b3f9dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60bbc357-1532-4187-8e14-2c0e5be5d1b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > a:nth-child(1) > span",
+      "targets": [
+        ["css=.btn > a:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='contents']/div[2]/div/div[3]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'학생')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8926",
+      "windowTimeout": 2000
+    }, {
+      "id": "c7466201-ff99-45cd-8c03-43e3e062d8a6",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "393adb32-08d7-4c7e-90a6-bf1a82327e80",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8926}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e47b265-1d4b-4623-9d54-28dd15feb148",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a006cde-063b-4459-b961-03cf52722a09",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "6993621a-361f-4376-b56c-7b187b3de44c",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acc5491a-cd66-4b9c-ac8b-3839b459ad7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "077f5a5e-ac81-4c2e-9bc0-db98bcdad415",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"JavaScript:LoginInfoSend('LoginInfo');\")]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4accb78e-576d-49c5-8430-66b1abb162b5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "802220ea-969d-436f-8556-dce13b594cf5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5556928-8dcb-4116-8d47-6045bfd4196a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=CAU | CHUNG-ANG UNIVERSITY",
+      "targets": [
+        ["linkText=CAU | CHUNG-ANG UNIVERSITY", "linkText"],
+        ["css=.logo > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CAU | CHUNG-ANG UNIVERSITY')]", "xpath:link"],
+        ["xpath=//div[@id='header']/h1/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CAU | CHUNG-ANG UNIVERSITY')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f752e529-abcb-469c-9530-e9d62b5e2d8f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=CAU | CHUNG-ANG UNIVERSITY",
+      "targets": [
+        ["linkText=CAU | CHUNG-ANG UNIVERSITY", "linkText"],
+        ["css=.logo > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CAU | CHUNG-ANG UNIVERSITY')]", "xpath:link"],
+        ["xpath=//div[@id='header']/h1/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CAU | CHUNG-ANG UNIVERSITY')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2cd39ef-39f9-454e-b188-7fcf19510b43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=강의시간표",
+      "targets": [
+        ["linkText=강의시간표", "linkText"],
+        ["css=.func > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'강의시간표')]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div[2]/div/div[3]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mportal.cau.ac.kr/std/usk/sUskSif001/search.do')]", "xpath:href"],
+        ["xpath=//div[3]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'강의시간표')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4223",
+      "windowTimeout": 2000
+    }, {
+      "id": "4a13b443-4528-4ad3-a048-afbaa7b27700",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4223}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a77b5fd8-7b36-4eb2-8f1f-12271113f8bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nb-h-icon-signIn > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@onclick='fncLogin()']", "xpath:attributes"],
+        ["xpath=//div[@id='nbHeaderContext']/div/div/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[4]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ee2d72d-ce02-461d-a259-dbb89ff25ea4",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=userID", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ed305d10-fa09-4396-834c-701ba854fe94",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPwd",
+      "targets": [
+        ["id=txtPwd", "id"],
+        ["name=password", "name"],
+        ["css=#txtPwd", "css:finder"],
+        ["xpath=//input[@id='txtPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23dce24d-d7e9-442e-833c-3b555d4952b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPwd",
+      "targets": [
+        ["id=txtPwd", "id"],
+        ["name=password", "name"],
+        ["css=#txtPwd", "css:finder"],
+        ["xpath=//input[@id='txtPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "eb43d140-cb89-481e-9dcb-c6a0c649b146",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick='OnLogon();']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44133669-ac55-473e-8aba-1fdefc1a500d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bfaf25c-5d03-4221-b0b7-28535dd65570",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43470426-920f-4a60-a5c8-cc40ab3fe716",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e7720a40-695b-4fd7-be65-0f967f606d68",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1b2076c-4666-4455-9257-b214d9e4bd0e"]
+  }],
+  "urls": ["https://www.cau.ac.kr/"],
+  "plugins": []
+}

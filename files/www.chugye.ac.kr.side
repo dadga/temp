@@ -1,0 +1,150 @@
+{
+  "id": "3b5693c1-750b-488e-903f-de8101bfc1ec",
+  "version": "2.0",
+  "name": "www.chugye.ac.kr",
+  "url": "https://www.chugye.ac.kr",
+  "tests": [{
+    "id": "5b909ac8-aef1-46a2-a962-cc8c739a480e",
+    "name": "www.chugye.ac.kr",
+    "commands": [{
+      "id": "3db028b7-7eb5-4790-9f3d-1cc19292d4a0",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.chugye.ac.kr/mbs/university/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c314382-f2eb-434f-afdc-a42ff524e75a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "424ec04b-035c-4f14-bf1e-f9c0da70c366",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.utilmenu li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.chugye.ac.kr/mbs/university/jsp/member/login.jsp?id=university_090000000000')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6638b551-91a5-4a8d-a76a-99dbd5be4586",
+      "comment": "",
+      "command": "click",
+      "target": "id=memberTypeU",
+      "targets": [
+        ["id=memberTypeU", "id"],
+        ["name=memberType", "name"],
+        ["css=#memberTypeU", "css:finder"],
+        ["xpath=//input[@id='memberTypeU']", "xpath:attributes"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f0dbc4d-2cf9-441d-9f10-0398e2177ab6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_input",
+      "targets": [
+        ["css=.login_input", "css:finder"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa92109-3cf0-4f97-8ed6-800dfd0680e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "beaafdc4-4db4-4acf-8f1a-6acfd2e1a8bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ef5bff49-a24e-4ded-8116-6ecaa2b099a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_passwd",
+      "targets": [
+        ["id=member_passwd", "id"],
+        ["name=member_passwd", "name"],
+        ["css=#member_passwd", "css:finder"],
+        ["xpath=//input[@id='member_passwd']", "xpath:attributes"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42dc42df-d7c6-4fe7-b2bc-241c867b6e3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_passwd",
+      "targets": [
+        ["id=member_passwd", "id"],
+        ["name=member_passwd", "name"],
+        ["css=#member_passwd", "css:finder"],
+        ["xpath=//input[@id='member_passwd']", "xpath:attributes"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6db79482-ba62-480c-831b-467464f06793",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_submit > input",
+      "targets": [
+        ["css=.login_submit > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='_contentBuilder']/div/div/div/form/fieldset/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a31be5b-84ed-42eb-88dc-9ac21d5f28a9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9819edee-963f-42e7-99ac-019b62704d38",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5b909ac8-aef1-46a2-a962-cc8c739a480e"]
+  }],
+  "urls": ["https://www.chugye.ac.kr/"],
+  "plugins": []
+}
