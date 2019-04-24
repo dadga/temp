@@ -1,0 +1,182 @@
+{
+  "id": "bef4932c-d85e-4087-bd1b-d1ca71633f12",
+  "version": "2.0",
+  "name": "www.ginue.ac.kr",
+  "url": "http://www.ginue.ac.kr",
+  "tests": [{
+    "id": "54b75d4f-31f0-4d41-81ad-18f1dfba54c8",
+    "name": "www.ginue.ac.kr",
+    "commands": [{
+      "id": "a9ff4d6d-1754-484f-a419-f18893bebb56",
+      "comment": "",
+      "command": "open",
+      "target": "/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a42b0df-3fd4-41ac-a820-b87e9e975b6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89143452-68fb-4f93-8e48-b164b0006c81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.utill li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://portal.ginue.ac.kr/user/login.face?return_url=http://www.ginue.ac.kr/SSO_check.jsp&referr_url=https://www.ginue.ac.kr/?menuno=668')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f6f3118-04fc-4d5c-ae9c-2422a6abd5dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//dl[@id='in1']/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e55ecc8b-ae19-4ae4-ba2c-3cf4c2bbca60",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//dl[@id='in1']/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cafceb2-4763-4cd4-b36b-9424dbf502a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//dl[@id='in1']/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cac1769-f581-480a-b141-3652aaad395c",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//dl[@id='in1']/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "fcb372e9-a317-4a32-b617-cb89c4a60f3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=contents",
+      "targets": [
+        ["id=contents", "id"],
+        ["css=#contents", "css:finder"],
+        ["xpath=//div[@id='contents']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a0d6166-f22c-4b07-a778-c41a595f0bbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=in1",
+      "targets": [
+        ["id=in1", "id"],
+        ["css=#in1", "css:finder"],
+        ["xpath=//dl[@id='in1']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/div/dl", "xpath:idRelative"],
+        ["xpath=//dl", "xpath:position"],
+        ["xpath=//dl[contains(.,'아이디')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdf00555-913d-494c-9d50-5ad795ee99ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=userpw",
+      "targets": [
+        ["id=userpw", "id"],
+        ["name=password", "name"],
+        ["css=#userpw", "css:finder"],
+        ["xpath=//input[@id='userpw']", "xpath:attributes"],
+        ["xpath=//dl[@id='in2']/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb5da90b-b4aa-4d60-b267-41a7b75958e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=userpw",
+      "targets": [
+        ["id=userpw", "id"],
+        ["name=password", "name"],
+        ["css=#userpw", "css:finder"],
+        ["xpath=//input[@id='userpw']", "xpath:attributes"],
+        ["xpath=//dl[@id='in2']/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "29d8449f-267a-4a36-bf4b-10cb364d0451",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["name=btn_login", "name"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//input[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//dl[@id='in3']/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[3]/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adf9dc7a-2a41-4476-bc73-55336dab3ef4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "10ed1daf-b56f-4998-b2ff-3ce461f01575",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["54b75d4f-31f0-4d41-81ad-18f1dfba54c8"]
+  }],
+  "urls": ["http://www.ginue.ac.kr/"],
+  "plugins": []
+}

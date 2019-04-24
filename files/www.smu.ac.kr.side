@@ -1,0 +1,147 @@
+{
+  "id": "ff8a0389-4e10-4136-adfa-ea3d6481d8ad",
+  "version": "2.0",
+  "name": "Sanmyung University",
+  "url": "https://www.smu.ac.kr",
+  "tests": [{
+    "id": "b097e44f-93aa-4a72-bd01-2011dab1be42",
+    "name": "http://www.smu.ac.kr.side",
+    "commands": [{
+      "id": "baee8e42-1440-4cfd-b42d-c6f0c6f675ac",
+      "comment": "",
+      "command": "open",
+      "target": "/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48d2bf04-895c-43a8-9263-d2a912273830",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c92ed989-9802-44d9-aa6e-4edccd2d7c12",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.login:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:loginPopupOpen();')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7698",
+      "windowTimeout": 2000
+    }, {
+      "id": "88297d6e-1e79-44be-9c96-66590bfd3d11",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86243f03-c199-4185-95ef-ae253acb9fc6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7698}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed4aeebb-96f1-4ace-804b-f47c5425d037",
+      "comment": "",
+      "command": "click",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=.INPUT_TXT", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae5ead53-daa6-48d2-8221-e13f03959e68",
+      "comment": "",
+      "command": "type",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=.INPUT_TXT", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "16a75dc8-7f6b-4226-8d99-64f74789bf6a",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=.input_pw", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5720d6c0-57e0-4c83-9c04-f9c2376d3933",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=.input_pw", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4abb5cd3-1eba-4625-9cb6-74c59800865a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt_login2",
+      "targets": [
+        ["css=.bt_login2", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c9d94d-4dc1-4311-b2c3-dfe85afcca74",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa4a1ea5-b851-44b2-ba2e-659ffe51cdb7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49f0d924-55eb-4ff8-b773-432136470b4d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51ce2b30-85bc-400c-91fc-7b779adedc62",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b097e44f-93aa-4a72-bd01-2011dab1be42"]
+  }],
+  "urls": ["https://www.smu.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,118 @@
+{
+  "id": "7f525ed1-11d4-44d8-94d0-2edd4f8a900c",
+  "version": "2.0",
+  "name": "www.sjs.ac.kr",
+  "url": "http://www.sjs.ac.kr",
+  "tests": [{
+    "id": "4d507e93-9474-4be8-8029-a8cbcca98f8f",
+    "name": "www.sjs.ac.kr",
+    "commands": [{
+      "id": "1f09d8ab-a9d2-40cc-8624-5432d8d6127c",
+      "comment": "",
+      "command": "open",
+      "target": "/ht_ml/main/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c75fcb5d-8c61-482a-b1c8-684fd9fda62d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a776369b-33a2-41b0-8f58-3345917d0a29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.utilMenu1 > li:nth-child(4) img",
+      "targets": [
+        ["css=.utilMenu1 > li:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div[@id='wrapper']/div[3]/div/div[2]/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95b698cb-450e-4fb6-bcfd-e1b2a4131aa8",
+      "comment": "",
+      "command": "click",
+      "target": "name=userid",
+      "targets": [
+        ["name=userid", "name"],
+        ["css=tr:nth-child(1) > td > .input", "css:finder"],
+        ["xpath=//input[@name='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fc793fb-5a00-4f24-a4df-9c6e26b5a4d4",
+      "comment": "",
+      "command": "type",
+      "target": "name=userid",
+      "targets": [
+        ["name=userid", "name"],
+        ["css=tr:nth-child(1) > td > .input", "css:finder"],
+        ["xpath=//input[@name='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "510891bd-8a14-4b26-a85b-16d3d3366f92",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e909e4e-b48f-4e63-b001-9529586863ed",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bf2e7e14-911d-47ce-ba13-eb39664b7ab1",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "956e5e14-164b-4a0c-b6b0-3acafb14e703",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2540462b-b5b5-44aa-8775-82d0c4e33265",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4d507e93-9474-4be8-8029-a8cbcca98f8f"]
+  }],
+  "urls": ["http://www.sjs.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,153 @@
+{
+  "id": "e88dd467-c63b-4438-bd50-004849a63801",
+  "version": "2.0",
+  "name": "www.shinhan.ac.kr",
+  "url": "http://www.shinhan.ac.kr",
+  "tests": [{
+    "id": "d2deb1bd-6006-42c2-8138-f052f51b4c91",
+    "name": "www.shinhan.ac.kr",
+    "commands": [{
+      "id": "da1a96d3-38bc-4dd7-9be7-918ebe5b623e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b135880-a730-4b46-a8e3-2cda4469dc24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b47e5e05-7db9-4132-abe8-debcad7e2c2d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#gnb li:nth-child(4) > a",
+      "targets": [
+        ["css=#gnb li:nth-child(4) > a", "css:finder"],
+        ["xpath=//nav[@id='gnb']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/haksa/class/class_01.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e660c2e-60a1-4ef5-806f-129e00329403",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.active > a",
+      "targets": [
+        ["css=.active > a", "css:finder"],
+        ["xpath=//nav[@id='gnb']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/haksa/class/class_01.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadbbeaa-ba54-4c62-94ea-9a452d159867",
+      "comment": "",
+      "command": "click",
+      "target": "css=#topLink > a:nth-child(2) > img",
+      "targets": [
+        ["css=#topLink > a:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//p[@id='topLink']/a[2]/img", "xpath:idRelative"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "786e44fc-efea-43e2-a892-bd3c9ecad070",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=user_id", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//article[@id='login']/fieldset/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//form/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "355d5f42-22d1-40e1-85cf-019b4f2bd935",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=user_id", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//article[@id='login']/fieldset/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//form/p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "8c9c61ee-96e1-42d9-8181-0f5d7cc3c44b",
+      "comment": "",
+      "command": "click",
+      "target": "id=userPw",
+      "targets": [
+        ["id=userPw", "id"],
+        ["name=user_pw", "name"],
+        ["css=#userPw", "css:finder"],
+        ["xpath=//input[@id='userPw']", "xpath:attributes"],
+        ["xpath=//article[@id='login']/fieldset/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e423f2a9-0c6d-42f9-894b-4fba94d7d246",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPw",
+      "targets": [
+        ["id=userPw", "id"],
+        ["name=user_pw", "name"],
+        ["css=#userPw", "css:finder"],
+        ["xpath=//input[@id='userPw']", "xpath:attributes"],
+        ["xpath=//article[@id='login']/fieldset/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "2e6172a3-caaa-444d-9c76-c33300821f56",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > a > img",
+      "targets": [
+        ["css=div > a > img", "css:finder"],
+        ["xpath=(//img[@alt='로그인'])[4]", "xpath:img"],
+        ["xpath=//article[@id='login']/fieldset/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec92a74-aa5c-48e7-814d-22bd56cc2dfd",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "등록되지 않은 아이디 입니다",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93fe6e66-73d8-43d1-959b-a8a332669e8c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a8226d9e-0caa-4f5a-8bde-7dc0999aa007",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d2deb1bd-6006-42c2-8138-f052f51b4c91"]
+  }],
+  "urls": ["http://www.shinhan.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,108 @@
+{
+  "id": "881b8326-314f-4723-99b1-c59a291cf8df",
+  "version": "2.0",
+  "name": "www.joongbu.ac.kr.side",
+  "url": "http://www.joongbu.ac.kr",
+  "tests": [{
+    "id": "36289dfc-3e29-48f5-b390-9c2d46cf3a5b",
+    "name": "www.joongbu.ac.kr.side",
+    "commands": [{
+      "id": "3c13dde2-f221-4a91-8233-a1b184f5f8d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9027f5ca-a723-4bbb-bbf2-2eb06dbb6878",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f97aee9-bb7d-43bf-abe2-e6dbade8fc92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.right_gm > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='global']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://www.joongbu.ac.kr/member/home/sitemap_02_02/loginForm.do']", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c55d9dda-3aa6-41f2-97ff-e7cfe1ba5124",
+      "comment": "",
+      "command": "click",
+      "target": "id=memNam",
+      "targets": [
+        ["id=memNam", "id"],
+        ["css=#memNam", "css:finder"],
+        ["xpath=//input[@id='memNam']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab24b7ef-8326-4abb-9b71-09551d54a0f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=memNam",
+      "targets": [
+        ["id=memNam", "id"],
+        ["css=#memNam", "css:finder"],
+        ["xpath=//input[@id='memNam']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "438f8585-cffa-4104-a3c8-c45904ad64de",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPass2",
+      "targets": [
+        ["id=userPass2", "id"],
+        ["css=#userPass2", "css:finder"],
+        ["xpath=//input[@id='userPass2']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "23c1573b-bb17-4835-b392-badd6b07e4a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rLogin1 .bt_login > input",
+      "targets": [
+        ["css=.rLogin1 .bt_login > input", "css:finder"],
+        ["xpath=(//input[@type='image'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db89b932-3186-442e-8751-0b2cdd54fd9f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "edf89e94-1eab-4561-bd1a-0bfb60c68590",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36289dfc-3e29-48f5-b390-9c2d46cf3a5b"]
+  }],
+  "urls": ["http://www.joongbu.ac.kr/"],
+  "plugins": []
+}

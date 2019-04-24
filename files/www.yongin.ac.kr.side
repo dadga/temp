@@ -1,0 +1,119 @@
+{
+  "id": "64aa32e8-e6bb-4fc8-a239-2ce563846f34",
+  "version": "2.0",
+  "name": "www.yongin.ac.kr",
+  "url": "http://www.yongin.ac.kr",
+  "tests": [{
+    "id": "120188cf-527f-4e62-9c54-6ca790cf8e15",
+    "name": "www.yongin.ac.kr",
+    "commands": [{
+      "id": "d2effb71-f815-4fc4-b66b-4ecedd95ba11",
+      "comment": "",
+      "command": "open",
+      "target": "/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c764339-bf85-4055-a195-14efd6bf7ee2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88d7ebc2-c82c-419e-9883-4e269cc90631",
+      "comment": "",
+      "command": "click",
+      "target": "css=.util_menu li:nth-child(1) > a",
+      "targets": [
+        ["css=.util_menu li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//form[@id='searchForm']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//form/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "338f1006-3fc0-4b8b-ae76-33bedeb24946",
+      "comment": "",
+      "command": "click",
+      "target": "name=j_username",
+      "targets": [
+        ["name=j_username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='j_username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41b034d7-1d85-4ace-9d5d-0f9f45585234",
+      "comment": "",
+      "command": "type",
+      "target": "name=j_username",
+      "targets": [
+        ["name=j_username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='j_username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "57df7d3c-812a-4da2-809d-ee903694a154",
+      "comment": "",
+      "command": "click",
+      "target": "name=j_password",
+      "targets": [
+        ["name=j_password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='j_password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c849a5b-889e-4a35-88bf-ef44cdb8c50d",
+      "comment": "",
+      "command": "type",
+      "target": "name=j_password",
+      "targets": [
+        ["name=j_password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='j_password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "74c1a5cc-64d8-4b01-b0ea-6f4319b58012",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_btn > input",
+      "targets": [
+        ["css=.login_btn > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "155617e1-b853-4269-b644-64ddbc0eb961",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e97d7d8b-0cc0-4291-bfb3-5208d88e50bc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["120188cf-527f-4e62-9c54-6ca790cf8e15"]
+  }],
+  "urls": ["http://www.yongin.ac.kr/"],
+  "plugins": []
+}
