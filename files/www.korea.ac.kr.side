@@ -1,0 +1,120 @@
+{
+  "id": "5f1057d4-946c-484c-b5ed-c99ff56a95eb",
+  "version": "2.0",
+  "name": "KoreaUniv",
+  "url": "http://www.korea.ac.kr",
+  "tests": [{
+    "id": "a51b3948-86c0-4786-9415-1a0fc9d6ad1c",
+    "name": "KoreaUniv",
+    "commands": [{
+      "id": "30746147-af7c-4b77-a6f0-ae3cb0736d1d",
+      "comment": "",
+      "command": "open",
+      "target": "/mbshome/mbs/university/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f316531-d506-4fe7-9f95-f5bf6c17cd19",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "756d56c3-889f-4301-b38b-05ba45b7d8c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.gService > ul > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"ga('send','event','Header','click','로그인');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='headerWrap']/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cop/member/memberLoginForm.do?siteId=university&id=university_090100000000')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0eb43e5-434a-4a5c-877f-e3804d8801fd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,328)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49bc4dd2-56a7-438f-8f32-a3ec3d793f16",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//div[@id='contents_body']/div[2]/div/div/div/form/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ed782ca-03bb-4109-8e20-46f35d96e654",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//div[@id='contents_body']/div[2]/div/div/div/form/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "fe788e9e-d78b-40fe-9362-65acea2e95a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPw",
+      "targets": [
+        ["id=userPw", "id"],
+        ["name=userPw", "name"],
+        ["css=#userPw", "css:finder"],
+        ["xpath=//input[@id='userPw']", "xpath:attributes"],
+        ["xpath=//div[@id='contents_body']/div[2]/div/div/div/form/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "a48c0838-1c74-4f11-9fb5-7895d52dce50",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='contents_body']/div[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56cb9124-5f7f-4cb2-8545-c23ae98f2832",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cebdc351-4542-480f-bb75-f09e9757b58d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a51b3948-86c0-4786-9415-1a0fc9d6ad1c"]
+  }],
+  "urls": ["http://www.korea.ac.kr/"],
+  "plugins": []
+}
