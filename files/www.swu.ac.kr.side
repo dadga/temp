@@ -1,47 +1,171 @@
 {
-  "id": "fafd5c13-b496-4fb6-9c93-327d8334b25d",
+  "id": "56c31e81-86c8-4958-b805-bb885442530f",
   "version": "2.0",
   "name": "www.swu.ac.kr",
   "url": "http://www.swu.ac.kr",
   "tests": [{
-    "id": "dba3f1ed-b5f1-43ff-ae7f-9385863547c3",
+    "id": "1c6374f7-4282-401f-8a9a-dda99644ba89",
     "name": "www.swu.ac.kr",
     "commands": [{
-      "id": "06ee7cc9-b926-4289-be37-4a934ae5b30a",
+      "id": "b7464710-b706-4b6e-93b7-afc70199806c",
       "comment": "",
       "command": "open",
       "target": "/index.do",
       "targets": [],
       "value": ""
     }, {
-      "id": "f949812e-7b50-4ccb-b4b4-611a48d2c5bb",
+      "id": "cf2d4663-c8cb-498e-8be1-ca2ab38118c2",
       "comment": "",
       "command": "setWindowSize",
       "target": "1552x840",
       "targets": [],
       "value": ""
     }, {
-      "id": "476b1167-8bdc-4718-825c-7ac90edc3472",
+      "id": "36e02763-969c-44d7-881f-c13fed9af1d3",
       "comment": "",
       "command": "selectFrame",
-      "target": "index=1",
+      "target": "index=1root",
       "targets": [
-        ["index=1"]
+        ["index=1root"]
       ],
       "value": ""
     }, {
-      "id": "4c231447-b22d-416d-a06e-7a377e920c9e",
+      "id": "fdcf33ba-c744-4b8f-8cfe-f8000119546c",
+      "comment": "",
+      "command": "//selectFrame",
+      "target": "index=1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14ca0400-21dc-4b50-abcb-5994067b3cc3",
       "comment": "",
       "command": "click",
-      "target": "css=li:nth-child(1)",
+      "target": "linkText=WEBMAIL",
       "targets": [
-        ["css=li:nth-child(1)", "css:finder"],
-        ["xpath=//li", "xpath:position"],
-        ["xpath=//li[contains(.,'LOGIN')]", "xpath:innerText"]
+        ["linkText=WEBMAIL", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'WEBMAIL')]", "xpath:link"],
+        ["xpath=//a[@href='http://mail.swu.ac.kr/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'WEBMAIL')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win118",
+      "windowTimeout": 2000
+    }, {
+      "id": "b0409842-187f-49ec-9220-346b31dfb379",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dcefb5a-900d-4d36-bc09-97dc6a8b938e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win118}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "976e536b-c11c-49c2-91cb-eaa3d0b9fd96",
+      "comment": "",
+      "command": "click",
+      "target": "id=cid",
+      "targets": [
+        ["id=cid", "id"],
+        ["name=cid", "name"],
+        ["css=#cid", "css:finder"],
+        ["xpath=//input[@id='cid']", "xpath:attributes"],
+        ["xpath=//form[@id='frmlogin']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "f40be2be-ce27-4970-bc15-64e866b0ee82",
+      "id": "fd35740f-ae76-4b09-b49a-dcf7028991c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=cid",
+      "targets": [
+        ["id=cid", "id"],
+        ["name=cid", "name"],
+        ["css=#cid", "css:finder"],
+        ["xpath=//input[@id='cid']", "xpath:attributes"],
+        ["xpath=//form[@id='frmlogin']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "68c223d0-4f42-46d8-95db-5268f12330e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpw",
+      "targets": [
+        ["id=cpw", "id"],
+        ["name=cpw", "name"],
+        ["css=#cpw", "css:finder"],
+        ["xpath=//input[@id='cpw']", "xpath:attributes"],
+        ["xpath=//form[@id='frmlogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4758d709-cf8a-467c-b9d2-05aa5fd36a4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpw",
+      "targets": [
+        ["id=cpw", "id"],
+        ["name=cpw", "name"],
+        ["css=#cpw", "css:finder"],
+        ["xpath=//input[@id='cpw']", "xpath:attributes"],
+        ["xpath=//form[@id='frmlogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "816538d3-5c5f-43d2-9f6e-7a1c717499e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-auth-login-button",
+      "targets": [
+        ["css=.mb-auth-login-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frmlogin']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba170cbf-dd1d-4378-b8e8-c926235d6a51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d25f15e-25a3-4dee-bec7-4272a1c1d1b3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8bd05dd-fde1-453b-a025-a63e0216c2ad",
+      "comment": "",
+      "command": "//selectFrame",
+      "target": "index=1root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f52d60e3-0f8b-40e9-92dd-a96c2fdee4cb",
+      "comment": "",
+      "command": "//selectFrame",
+      "target": "index=1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "070dcdf9-5158-4153-85bf-75ea693dfe69",
       "comment": "",
       "command": "click",
       "target": "linkText=LOGIN",
@@ -56,7 +180,7 @@
       ],
       "value": ""
     }, {
-      "id": "55b02411-8dbe-41a8-9bde-20895b9719f4",
+      "id": "97715a97-830b-443f-80f5-75da6133f636",
       "comment": "",
       "command": "selectFrame",
       "target": "relative=parent",
@@ -65,7 +189,14 @@
       ],
       "value": ""
     }, {
-      "id": "0e93976f-0ae2-419c-8159-f029ff13f1f5",
+      "id": "577eec0b-5d60-418b-aca7-216ae6331e72",
+      "comment": "",
+      "command": "//selectFrame",
+      "target": "relative=parent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24c28a60-cc7d-46bc-9957-ac21c9254283",
       "comment": "",
       "command": "click",
       "target": "name=userID",
@@ -78,7 +209,7 @@
       ],
       "value": ""
     }, {
-      "id": "72e37bce-2b63-4b35-95ea-469ee94e753e",
+      "id": "09e654f8-c75f-49f6-89c9-d2187eccacc8",
       "comment": "",
       "command": "type",
       "target": "name=userID",
@@ -91,7 +222,7 @@
       ],
       "value": "testtest"
     }, {
-      "id": "0741ee34-15f8-4b8a-b001-45a261e07ddb",
+      "id": "4218697a-ea76-4822-8d0d-6cfebd3589ad",
       "comment": "",
       "command": "click",
       "target": "name=userPW",
@@ -104,7 +235,7 @@
       ],
       "value": ""
     }, {
-      "id": "ef4195b8-3ac5-409c-ba73-443e4a01c31a",
+      "id": "c2c8237e-54cd-4108-a642-a61def8de579",
       "comment": "",
       "command": "type",
       "target": "name=userPW",
@@ -117,7 +248,7 @@
       ],
       "value": "11111111"
     }, {
-      "id": "fd6becb2-89e3-41f6-9dd3-9b5efcc8a524",
+      "id": "3fa394e7-eddd-40af-9e32-081f0e0438fb",
       "comment": "",
       "command": "click",
       "target": "css=.login > strong",
@@ -129,151 +260,21 @@
       ],
       "value": ""
     }, {
-      "id": "c00236d4-efcd-4138-9a53-192bd8d15733",
-      "comment": "",
-      "command": "selectFrame",
-      "target": "index=1",
-      "targets": [
-        ["index=1"]
-      ],
-      "value": ""
-    }, {
-      "id": "41abb04c-8685-4956-8f72-b71a40a3845c",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=WEBMAIL",
-      "targets": [
-        ["linkText=WEBMAIL", "linkText"],
-        ["css=li:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'WEBMAIL')]", "xpath:link"],
-        ["xpath=//a[@href='http://mail.swu.ac.kr/']", "xpath:href"],
-        ["xpath=//li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'WEBMAIL')]", "xpath:innerText"]
-      ],
-      "value": "",
-      "opensWindow": true,
-      "windowHandleName": "win3334",
-      "windowTimeout": 2000
-    }, {
-      "id": "25996130-2645-440f-8223-f5ddfef32238",
-      "comment": "",
-      "command": "storeWindowHandle",
-      "target": "root",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "daa77467-0c22-4a73-b415-ea73b3265679",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${win3334}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "6f7ee6dd-137d-4cb5-aa1f-e7f046376c11",
-      "comment": "",
-      "command": "click",
-      "target": "id=cid",
-      "targets": [
-        ["id=cid", "id"],
-        ["name=cid", "name"],
-        ["css=#cid", "css:finder"],
-        ["xpath=//input[@id='cid']", "xpath:attributes"],
-        ["xpath=//form[@id='frmlogin']/div/input", "xpath:idRelative"],
-        ["xpath=//div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "22479543-1816-478f-b4dd-b13816ebca5a",
-      "comment": "",
-      "command": "type",
-      "target": "id=cid",
-      "targets": [
-        ["id=cid", "id"],
-        ["name=cid", "name"],
-        ["css=#cid", "css:finder"],
-        ["xpath=//input[@id='cid']", "xpath:attributes"],
-        ["xpath=//form[@id='frmlogin']/div/input", "xpath:idRelative"],
-        ["xpath=//div/input", "xpath:position"]
-      ],
-      "value": "testtest"
-    }, {
-      "id": "2e19a403-241c-41c0-b057-b0d97f76dd5a",
-      "comment": "",
-      "command": "click",
-      "target": "id=cpw",
-      "targets": [
-        ["id=cpw", "id"],
-        ["name=cpw", "name"],
-        ["css=#cpw", "css:finder"],
-        ["xpath=//input[@id='cpw']", "xpath:attributes"],
-        ["xpath=//form[@id='frmlogin']/div[2]/input", "xpath:idRelative"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "c4fe5d8b-5b62-4284-b569-acd130b4e0d3",
-      "comment": "",
-      "command": "type",
-      "target": "id=cpw",
-      "targets": [
-        ["id=cpw", "id"],
-        ["name=cpw", "name"],
-        ["css=#cpw", "css:finder"],
-        ["xpath=//input[@id='cpw']", "xpath:attributes"],
-        ["xpath=//form[@id='frmlogin']/div[2]/input", "xpath:idRelative"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": "11111111"
-    }, {
-      "id": "52f83c3c-ea5c-4234-bb36-6703a7efbb4c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.mb-auth-login-button",
-      "targets": [
-        ["css=.mb-auth-login-button", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//form[@id='frmlogin']/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5e0186cd-27f5-49ae-ae89-5295fb0b0ee7",
+      "id": "18e105f2-ffb5-4807-9000-6531c70f5691",
       "comment": "",
       "command": "close",
       "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d8d1f143-07a2-4176-80d2-bd299f7399a7",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${root}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7f6b9b20-51bb-4f97-b02f-abe43aa4d254",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "37db5168-e538-4bb9-a09a-76f73cdc5b61",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${undefined}",
       "targets": [],
       "value": ""
     }]
   }],
   "suites": [{
-    "id": "037e5856-1fb6-4000-a6d3-eb177b2a8181",
+    "id": "c6e30f2e-921d-4f41-bd04-b8cbc3cebf95",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["dba3f1ed-b5f1-43ff-ae7f-9385863547c3"]
+    "tests": ["1c6374f7-4282-401f-8a9a-dda99644ba89"]
   }],
   "urls": ["http://www.swu.ac.kr/"],
   "plugins": []
