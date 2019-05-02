@@ -1,0 +1,97 @@
+{
+  "id": "92c186e1-a458-4aa6-bd71-f07af3e928fc",
+  "version": "2.0",
+  "name": "snue",
+  "url": "http://www.snue.ac.kr",
+  "tests": [{
+    "id": "71f7eed5-2104-47ee-a3ab-9508f0d9abb7",
+    "name": "www.snue.ac.kr.side",
+    "commands": [{
+      "id": "ce85a8af-1b42-4c5a-b347-f8bae848dbfc",
+      "comment": "",
+      "command": "open",
+      "target": "/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad044bce-9566-4613-b060-ce8e699f9acd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1475x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6c58498-9687-40f7-b7e7-45bc6852a54b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PORTAL",
+      "targets": [
+        ["linkText=PORTAL", "linkText"],
+        ["css=#top_nav li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PORTAL')]", "xpath:link"],
+        ["xpath=//div[@id='top_nav']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://portal.snue.ac.kr']", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PORTAL')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "930421dd-0afd-4791-a2be-c53d24c31793",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/dl/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "d13c796c-fe94-4a8e-89a4-ab4a92770a68",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "78c7cdb1-f77d-4ef3-99c0-f4381949a188",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn_login > input",
+      "targets": [
+        ["css=#btn_login > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//p[@id='btn_login']/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0060e5b6-7909-4ed7-9d94-58d0db961c00",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "아이디/사번 또는 비밀번호를 확인하세요.",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b6e5d465-5130-463b-aede-4ebdba9257a5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71f7eed5-2104-47ee-a3ab-9508f0d9abb7"]
+  }],
+  "urls": ["http://www.snue.ac.kr/"],
+  "plugins": []
+}
