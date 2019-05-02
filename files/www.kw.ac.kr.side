@@ -2,7 +2,7 @@
   "id": "381a2a70-9152-4191-880c-634f790a4c78",
   "version": "2.0",
   "name": "www.kw.ac.kr",
-  "url": "https://www.kw.ac.kr",
+  "url": "http://www.kw.ac.kr",
   "tests": [{
     "id": "b0e304b0-fe68-483a-9ca1-e0a3e31566a5",
     "name": "www.kw.ac.kr",

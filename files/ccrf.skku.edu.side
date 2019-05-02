@@ -2,7 +2,7 @@
   "id": "372eadb5-4a63-4831-b488-16c564d3c8b7",
   "version": "2.0",
   "name": "ccrf.skku.edu",
-  "url": "https://ccrf.skku.edu",
+  "url": "http://ccrf.skku.edu",
   "tests": [{
     "id": "c3c66184-3aa6-446c-8f38-23b5b26a21a7",
     "name": "ccrf.skku.edu",

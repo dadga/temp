@@ -2,7 +2,7 @@
   "id": "35c7ec9a-116e-41a9-b636-a1ccc124bf24",
   "version": "2.0",
   "name": "www.khu.ac.kr",
-  "url": "https://www.khu.ac.kr",
+  "url": "http://www.khu.ac.kr",
   "tests": [{
     "id": "afaf7fde-abbf-4682-adc7-5955bdbd23a4",
     "name": "www.khu.ac.kr",
