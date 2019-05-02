@@ -1,0 +1,139 @@
+{
+  "id": "a031d2d1-19f9-430b-9944-e3398384ba51",
+  "version": "2.0",
+  "name": "www.kyonggi.ac.kr",
+  "url": "http://www.kyonggi.ac.kr",
+  "tests": [{
+    "id": "b1bb7cc4-2757-42dc-af0f-e90cd11d82f0",
+    "name": "www.kyonggi.ac.kr",
+    "commands": [{
+      "id": "5de6fb36-be88-45fd-81bc-ab13487567fd",
+      "comment": "",
+      "command": "open",
+      "target": "/KyonggiUp.kgu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1899d84c-8791-4f09-9217-3f71e3c73e15",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7df30f2d-b414-49d6-82ac-c53e8aafcc4b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.gnb li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div[6]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.kyonggi.ac.kr/HSSOLogin.kgu')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83597c40-ae8b-4c3e-bee3-2728f9b1a51e",
+      "comment": "",
+      "command": "click",
+      "target": "id=idida",
+      "targets": [
+        ["id=idida", "id"],
+        ["name=id", "name"],
+        ["css=#idida", "css:finder"],
+        ["xpath=//input[@id='idida']", "xpath:attributes"],
+        ["xpath=//form[@id='HSSOLogin']/div/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f0c16e-bf53-4fcd-a04e-99541d2c77de",
+      "comment": "",
+      "command": "click",
+      "target": "id=idida",
+      "targets": [
+        ["id=idida", "id"],
+        ["name=id", "name"],
+        ["css=#idida", "css:finder"],
+        ["xpath=//input[@id='idida']", "xpath:attributes"],
+        ["xpath=//form[@id='HSSOLogin']/div/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccec748c-18b0-44ca-ab2f-4828325c349e",
+      "comment": "",
+      "command": "type",
+      "target": "id=idida",
+      "targets": [
+        ["id=idida", "id"],
+        ["name=id", "name"],
+        ["css=#idida", "css:finder"],
+        ["xpath=//input[@id='idida']", "xpath:attributes"],
+        ["xpath=//form[@id='HSSOLogin']/div/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "651bc3d4-33c8-406a-9796-3ac9b7ef830b",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='HSSOLogin']/div/div/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e54615-9cfa-4fc1-8a5d-8683bf421089",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='HSSOLogin']/div/div/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e6b94e45-6360-4e57-9e17-4ec5d8bfe8fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@type='image'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='HSSOLogin']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "121dcec2-3f3f-42df-babb-bca12422cc0d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9ea725f3-4c62-4bb3-b9ff-c6ea896b07d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b1bb7cc4-2757-42dc-af0f-e90cd11d82f0"]
+  }],
+  "urls": ["http://www.kyonggi.ac.kr/"],
+  "plugins": []
+}

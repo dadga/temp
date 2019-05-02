@@ -1,0 +1,126 @@
+{
+  "id": "372eadb5-4a63-4831-b488-16c564d3c8b7",
+  "version": "2.0",
+  "name": "ccrf.skku.edu",
+  "url": "http://ccrf.skku.edu",
+  "tests": [{
+    "id": "c3c66184-3aa6-446c-8f38-23b5b26a21a7",
+    "name": "ccrf.skku.edu",
+    "commands": [{
+      "id": "3da067a4-7385-4e9b-a151-194be5bc26a4",
+      "comment": "",
+      "command": "open",
+      "target": "/ccrf/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ac563b5-ca5e-4779-95c3-9cf5650b0ef9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88f94ffa-9f91-4976-8b12-281bd459d312",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.header-link-special > .login-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div[2]/div/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ccrf/login.do')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e58202fb-c9d1-47a1-9795-2b9f669becf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f4f7637-ae54-474a-80b0-dcdd5f91ff9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a87e8494-4fa5-4271-b834-3198291065f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d93aa88c-d183-41f9-8eba-e5afc343d588",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4460de19-a2d2-4658-bfac-fbefd30f3c36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_submit",
+      "targets": [
+        ["css=.btn_submit", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fc561a3-c9e3-49cf-bf6e-b6b4f5978097",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bb6c5beb-d26f-48e3-9665-723905fa8ed3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c3c66184-3aa6-446c-8f38-23b5b26a21a7"]
+  }],
+  "urls": ["https://ccrf.skku.edu/"],
+  "plugins": []
+}

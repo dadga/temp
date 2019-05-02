@@ -1,0 +1,153 @@
+{
+  "id": "ef3267f3-c2bc-4dbe-acff-9f4cd2fe455e",
+  "version": "2.0",
+  "name": "www.hytu.ac.kr",
+  "url": "http://www.hytu.ac.kr",
+  "tests": [{
+    "id": "5810637d-ca45-4c87-94df-97ea135e3599",
+    "name": "www.hytu.ac.kr",
+    "commands": [{
+      "id": "675482bf-8b20-460f-b9ed-6784abb55c19",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f894496-8fc3-4d20-8852-d83440a63a0f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0ff982d-9602-42db-a90d-cfcf1b99b038",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "713c1811-3c93-4fe7-bbc5-a25790aa6fb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gnb li:nth-child(1)",
+      "targets": [
+        ["css=.gnb li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='header']/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf15e3d5-0035-4ce4-a9e3-522f896de806",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.gnb li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/hy_main/member/login.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6502b82e-3c6c-4163-b3ad-887450bfa440",
+      "comment": "",
+      "command": "click",
+      "target": "id=mb_uid",
+      "targets": [
+        ["id=mb_uid", "id"],
+        ["name=mb_uid", "name"],
+        ["css=#mb_uid", "css:finder"],
+        ["xpath=//input[@id='mb_uid']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_common_contents']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a34a5ce-3db4-4d1e-a0bf-3f9ae5eadcd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=mb_uid",
+      "targets": [
+        ["id=mb_uid", "id"],
+        ["name=mb_uid", "name"],
+        ["css=#mb_uid", "css:finder"],
+        ["xpath=//input[@id='mb_uid']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_common_contents']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "17a418aa-4389-404f-ac53-72ff0ac32c64",
+      "comment": "",
+      "command": "click",
+      "target": "id=mb_pwd",
+      "targets": [
+        ["id=mb_pwd", "id"],
+        ["name=mb_pwd", "name"],
+        ["css=#mb_pwd", "css:finder"],
+        ["xpath=//input[@id='mb_pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_common_contents']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3df129a8-eeda-4af1-9256-05c68a10de7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mb_pwd",
+      "targets": [
+        ["id=mb_pwd", "id"],
+        ["name=mb_pwd", "name"],
+        ["css=#mb_pwd", "css:finder"],
+        ["xpath=//input[@id='mb_pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_common_contents']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "24e32f74-f86c-494e-8429-bf51d68619da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_join01",
+      "targets": [
+        ["css=.btn_join01", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_common_contents']/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46a44677-ae4a-4afe-b5d6-81a16a29297c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abe706c3-ff15-406d-a23c-deed7fb8cfb9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4836}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "def754c8-0745-4d35-9b5f-212f6aeb7dd5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5810637d-ca45-4c87-94df-97ea135e3599"]
+  }],
+  "urls": ["http://www.hytu.ac.kr/"],
+  "plugins": []
+}
