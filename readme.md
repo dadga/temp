@@ -19,9 +19,10 @@
 * ID에는 "testtest"를 입력한다. 간혹 메일 형식으로 입력을 해야 하는 경우에는 "test@test.net"을 입력한다.
 * PW에는 "11111111"을 입력한다.
 * 로그인 버튼을 누른다(당연히 로그인은 안됨).
-* 화면을 닫는다.
+* 화면을 닫는다. (열려있는 창은 되도록 다 닫는다.)
 * selenium에서 Stop Recording을 누른다.
 * 파일을 저장한다(예 : kcu.ac.kr.side)
+* "setWindowSize" 부분을 지운다.
 * https://github.com/dadga/temp/side에 올린다.
 
 ### side 파일 만들때 고려
