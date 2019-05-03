@@ -11,7 +11,7 @@
 * chrome에서 selenium extension 버튼을 클릭한다.
 * Record a new test in new project를 선택한다.
 * PROJECT NAME에는 대학교명을 입력한다(예 : KC대학교)
-* BASE URL에는 사이트 주소를 입력한다(예 : http://kcu.ac.kr)
+* BASE URL에는 사이트 주소를 입력한다. 가급적이면 "www"를 붙이지 않는다(예 : http://kcu.ac.kr).
   * URL에 "https://" 를 붙이지 않고 "http://" 를 붙인다.
   * 도메인 마지막에는 슬래시를 붙이지 않는다.
 * Start Recording을 누른다.
