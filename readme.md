@@ -24,7 +24,7 @@
 * 파일을 저장한다(예 : www.kcu.ac.kr.side)
 * https://github.com/dadga/temp/side에 올린다.
 
-### side 파일 만들때 고려할 것
+### side 파일 만들때 고려
 * 하나의 사이트에 여러개의 로그인 페이지가 있을경우 여러개의 tests를 추가하여 구분한다.
   * Selenium IDE 왼쪽 상단에 "add new test"를 통해 test를 추가한다.
 * Test PC에서 Allou Popup 미리 준비하고 ActiveX도 미리 설치해서 테스트할 예정
