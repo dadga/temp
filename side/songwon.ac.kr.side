@@ -1,0 +1,258 @@
+{
+  "id": "f53974e0-70c5-4208-a337-17513c7ccd8e",
+  "version": "2.0",
+  "name": "111",
+  "url": "http://www.songwon.ac.kr",
+  "tests": [{
+    "id": "fcc3f27d-0e39-4474-9303-ee98b4952323",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "574d1b5e-f6dc-4e38-bf31-c3886b1061d4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e060c48-c2d7-4061-81bc-d665179f44d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blogin > li:nth-child(2) img",
+      "targets": [
+        ["css=.blogin > li:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN']", "xpath:img"],
+        ["xpath=//div[@id='header']/div/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "047526d1-e835-42f6-b8e9-e1ede857fe01",
+      "comment": "",
+      "command": "click",
+      "target": "id=SingleID",
+      "targets": [
+        ["id=SingleID", "id"],
+        ["name=SingleID", "name"],
+        ["css=#SingleID", "css:finder"],
+        ["xpath=//input[@id='SingleID']", "xpath:attributes"],
+        ["xpath=//form[@id='g_login']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac2f32ac-af14-497a-b34a-8ff5cc4b52b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=SingleID",
+      "targets": [
+        ["id=SingleID", "id"],
+        ["name=SingleID", "name"],
+        ["css=#SingleID", "css:finder"],
+        ["xpath=//input[@id='SingleID']", "xpath:attributes"],
+        ["xpath=//form[@id='g_login']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "8000cc0d-fcd7-4b7a-9142-4bdee42a62b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=singlePW",
+      "targets": [
+        ["id=singlePW", "id"],
+        ["name=singlePW", "name"],
+        ["css=#singlePW", "css:finder"],
+        ["xpath=//input[@id='singlePW']", "xpath:attributes"],
+        ["xpath=//form[@id='g_login']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b6abfbb-380e-4f1d-842a-9aee9a239ab6",
+      "comment": "",
+      "command": "type",
+      "target": "id=singlePW",
+      "targets": [
+        ["id=singlePW", "id"],
+        ["name=singlePW", "name"],
+        ["css=#singlePW", "css:finder"],
+        ["xpath=//input[@id='singlePW']", "xpath:attributes"],
+        ["xpath=//form[@id='g_login']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "be99f02f-ba85-45ce-8c87-f0afb17991f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-submit",
+      "targets": [
+        ["id=login-submit", "id"],
+        ["css=#login-submit", "css:finder"],
+        ["xpath=//input[@id='login-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='g_login']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "301ec26c-bb3b-42dd-b1c5-9fbd660032f6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9b835a54-da95-43b1-8e94-ad7efc2e69db",
+    "name": "e-Class",
+    "commands": [{
+      "id": "07c52887-e00f-4538-85c1-fa45a5c2c746",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f418885e-1f0f-4a44-a836-50e75f7b6cb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(2) > li:nth-child(4) img",
+      "targets": [
+        ["css=ul:nth-child(2) > li:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@alt='e-class 바로가기']", "xpath:img"],
+        ["xpath=//div[@id='sidebar']/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/ul/li[4]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3195",
+      "windowTimeout": 2000
+    }, {
+      "id": "d8b8e5cd-dff1-44f5-a50d-2be8ccb4652d",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c310043-1d00-4525-bb8e-230b58fd90b0",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3195}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9389a3f3-d900-4350-83a0-629d2a13ce4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=마이페이지",
+      "targets": [
+        ["linkText=마이페이지", "linkText"],
+        ["css=.login_box", "css:finder"],
+        ["xpath=//a[contains(text(),'마이페이지')]", "xpath:link"],
+        ["xpath=//nav[@id='gnb']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://cms.songwon.ac.kr/index.php?module=xn_sso2013&act=procXn_sso2013LoginGateway&from=web_redirect&login_type=standalone&auto_login=true&sso_only=true&callback_url=https%3A%2F%2Feclass.songwon.ac.kr%2F/learningx/login')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'마이페이지')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14e45cab-1ea6-4426-abaf-8d9eb7f7549e",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_user_id",
+      "targets": [
+        ["id=login_user_id", "id"],
+        ["css=#login_user_id", "css:finder"],
+        ["xpath=//input[@id='login_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wapper']/div/div[3]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a26ecc29-1516-4db1-93ce-bac085cfead8",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_user_id",
+      "targets": [
+        ["id=login_user_id", "id"],
+        ["css=#login_user_id", "css:finder"],
+        ["xpath=//input[@id='login_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wapper']/div/div[3]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c32db832-2998-4cc4-af19-db7658b730d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_user_password",
+      "targets": [
+        ["id=login_user_password", "id"],
+        ["css=#login_user_password", "css:finder"],
+        ["xpath=//input[@id='login_user_password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wapper']/div/div[4]/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "244a7a99-0f02-4f9c-8df1-4a1cc6bda7c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_user_password",
+      "targets": [
+        ["id=login_user_password", "id"],
+        ["css=#login_user_password", "css:finder"],
+        ["xpath=//input[@id='login_user_password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wapper']/div/div[4]/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/span/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "544b7750-104e-4edd-9988-0221cd5c16bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login_btn > a", "css:finder"],
+        ["xpath=//div[@id='login_wapper']/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:onLoginClick();')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e33c5e71-0dca-45cd-b49a-f6c46431dd37",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b039b221-f717-4b3d-8f45-ec75b198db99",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c85975c6-eb8f-4a4e-bb19-f2186609f0b8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15f51479-1442-45a6-8fd3-8725dedaca72",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fcc3f27d-0e39-4474-9303-ee98b4952323"]
+  }],
+  "urls": ["http://www.songwon.ac.kr/"],
+  "plugins": []
+}
