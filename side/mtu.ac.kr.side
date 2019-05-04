@@ -2,7 +2,7 @@
   "id": "279b0ae6-dcca-43cd-b01a-e05ee66211fa",
   "version": "2.0",
   "name": "감리교신학대학교",
-  "url": "http://mtu.ac.kr",
+  "url": "http://www.mtu.ac.kr",
   "tests": [{
     "id": "e776c37c-2349-4312-b706-ffa018958d5c",
     "name": "학사행정시스템",
