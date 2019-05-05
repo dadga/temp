@@ -3,8 +3,13 @@
 * 구글 크롬에서 selenium extension을 설치한다. https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=en
 
 ## 조사 대상 리스트
+https://docs.google.com/spreadsheets/d/1d53I0kMRDD-2b5OBtcxr3dPz5huc-OPv8ZdhkkzLj5c/edit?usp=sharing
 
-* https://search.naver.com/search.naver?&query=%EC%A0%84%EA%B5%AD+%EB%8C%80%ED%95%99%EA%B5%90 사이트에 있는 63개 대학교에 대해 selenium side 파일을 만든다.
+* 상태를 "작업중"으로 변경하고 작업 시작, 작업이 완료되고 나면 "완료"로 변경, "미처리"의 경우 "비고" 칼럼에 이유를 기입.
+* 작업자는 추후 변경될 수 있음.
+* side 파일 작업이 완료되는 대로 수시로 github에 올린다.
+* 남들이 작업한 side 파일에 대해 상호검증을 한다. 본인이 작업한 것은 "본인"이라고 적는다. 상호검증의 완료되면 "O", 검증이 미진하면 그 원인을 기입.
+* 작업을 하거나 상호검증을 하다가 의문나는 사항이 있으면 Trello - Issue에 Card를 추가해서 그 내용을 적는다.
 
 ## side 파일 만드는 방법
 
