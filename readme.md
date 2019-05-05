@@ -3,7 +3,8 @@
 * 구글 크롬에서 selenium extension을 설치한다. https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=en
 
 ## 조사 대상 리스트
-전국 330개 대학
+전국 330개 대학. 
+
 https://docs.google.com/spreadsheets/d/1d53I0kMRDD-2b5OBtcxr3dPz5huc-OPv8ZdhkkzLj5c/edit?usp=sharing
 
 * 상태를 "작업중"으로 변경하고 작업 시작, 작업이 완료되고 나면 "완료"로 변경, "미처리"의 경우 "비고" 칼럼에 이유를 기입.
