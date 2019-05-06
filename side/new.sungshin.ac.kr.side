@@ -1,0 +1,245 @@
+{
+  "id": "87091afb-aba4-494d-9a39-006e4e954937",
+  "version": "2.0",
+  "name": "new.sungshin.ac.kr",
+  "url": "http://new.sungshin.ac.kr/",
+  "tests": [{
+    "id": "85c4a396-16b0-476e-8e79-3bdc67ea6366",
+    "name": "일반로그인",
+    "commands": [{
+      "id": "c68d8e0d-a5f7-4ca8-8ec9-ad4e37942840",
+      "comment": "",
+      "command": "open",
+      "target": "/web/kor/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62553d39-bdd6-40aa-924a-77bfffc2ec4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#topMenu > li:nth-child(2) img",
+      "targets": [
+        ["css=#topMenu > li:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='login']", "xpath:img"],
+        ["xpath=//ul[@id='topMenu']/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d4a991-b40e-4350-ad64-74a1055cbe3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=dl",
+      "targets": [
+        ["css=dl", "css:finder"],
+        ["xpath=//div[@id='tabLog_sub1']/div/fieldset/div/dl", "xpath:idRelative"],
+        ["xpath=//dl", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcfd3c4a-35db-48c3-85ad-ad15f18ba07c",
+      "comment": "",
+      "command": "click",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=.focus", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//div[@id='tabLog_sub1']/div/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "269972de-51b0-4925-8b7b-105d42f31415",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=.focus", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//div[@id='tabLog_sub1']/div/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "9a3fd6f3-bedf-4b76-986a-c7e5326bad22",
+      "comment": "",
+      "command": "click",
+      "target": "id=_58_password",
+      "targets": [
+        ["id=_58_password", "id"],
+        ["name=_58_password", "name"],
+        ["css=#\\_58_password", "css:finder"],
+        ["xpath=//input[@id='_58_password']", "xpath:attributes"],
+        ["xpath=//div[@id='tabLog_sub1']/div/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "072bfa1f-c001-4019-92a8-4b592ca1493d",
+      "comment": "",
+      "command": "type",
+      "target": "id=_58_password",
+      "targets": [
+        ["id=_58_password", "id"],
+        ["name=_58_password", "name"],
+        ["css=#\\_58_password", "css:finder"],
+        ["xpath=//input[@id='_58_password']", "xpath:attributes"],
+        ["xpath=//div[@id='tabLog_sub1']/div/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f12360cf-1dd7-4f1a-b6ba-18a00f05a5c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ipt_img",
+      "targets": [
+        ["css=.ipt_img", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='tabLog_sub1']/div/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f601a150-4cd9-4a2d-81a9-51f018b4d729",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6452024d-9fc7-4cc5-bbe1-fe7e6097711f",
+    "name": "성신포탈",
+    "commands": [{
+      "id": "629d8b89-6167-442c-a58d-261f4aa3bbba",
+      "comment": "",
+      "command": "open",
+      "target": "http://new.sungshin.ac.kr/web/kor/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08390531-461a-4685-a927-1ff56a335d3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gnbdepth1-img-8",
+      "targets": [
+        ["css=.gnbdepth1-img-8", "css:finder"],
+        ["xpath=//img[@alt='성신포탈']", "xpath:img"],
+        ["xpath=//li[@id='m07']/h3/a/img", "xpath:idRelative"],
+        ["xpath=//li[7]/h3/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3239",
+      "windowTimeout": 2000
+    }, {
+      "id": "56336aa6-ac72-45c6-8c50-2de7ed13b8c7",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa01ddbd-068c-4d6c-92f8-eec7a9f375ce",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3239}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62263539-4b2d-435e-9352-77d8c6cd785d",
+      "comment": "",
+      "command": "click",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=tr:nth-child(1) > td > .text01", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81f57a2b-7efa-4045-bd79-277c433dc5c5",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=tr:nth-child(1) > td > .text01", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "7a6784f8-e7f8-46de-a7a8-cee3123326f8",
+      "comment": "",
+      "command": "click",
+      "target": "name=_58_password",
+      "targets": [
+        ["name=_58_password", "name"],
+        ["css=tr:nth-child(2) > td > .text01", "css:finder"],
+        ["xpath=//input[@name='_58_password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff6e27cd-7b11-4e6e-9894-612789b657bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_password",
+      "targets": [
+        ["name=_58_password", "name"],
+        ["css=tr:nth-child(2) > td > .text01", "css:finder"],
+        ["xpath=//input[@name='_58_password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e7afbda2-9357-42fd-a32f-14dcf274bd02",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginImg",
+      "targets": [
+        ["id=loginImg", "id"],
+        ["css=#loginImg", "css:finder"],
+        ["xpath=//img[@id='loginImg']", "xpath:attributes"],
+        ["xpath=//form/table/tbody/tr/td[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83212dc9-3553-43a2-8dee-ccac78415796",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75efa30c-4600-4807-b14c-f0677c05f1d2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72aaccaa-459e-4172-a0d0-64a480097bc2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b3de0aea-7d7f-4dbb-93e5-c2ae3f97781c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["85c4a396-16b0-476e-8e79-3bdc67ea6366"]
+  }],
+  "urls": ["http://new.sungshin.ac.kr/"],
+  "plugins": []
+}
